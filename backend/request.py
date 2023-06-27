@@ -7,4 +7,6 @@ api_key = 'AIzaSyA8hJNd4cbYyaLtxQG8dSdAuxvgm8OQNSM'
 
 
 def return_query(query):
+    query = query.replace(' ', '+')
+    query = query.replace('_', '+')
     return f'{endpoint}?key={api_key}&type=video&part=snippet&maxResults=10&q={query}'
