@@ -10,7 +10,6 @@ const props = defineProps({
 
 function goToPage(){
   router.push(`${props.route}`)
-  console.log(props.route)
 }
 </script>
 
