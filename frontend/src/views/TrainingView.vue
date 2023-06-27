@@ -1,8 +1,7 @@
 <script setup>
-import { ref } from 'vue'
 import { useRoute } from "vue-router";
 const route = useRoute()
-const query = ref((route.params.query).replaceAll('+', " "))
+const query = (route.params.query).replaceAll('+', " ")
 console.log(query)
 </script>
 

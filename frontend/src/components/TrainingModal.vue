@@ -33,7 +33,7 @@ function getSelection(){
     }
   }
 
-  return `${skill}+${area}+drills`
+  return `/trainings/${skill}+${area}+drills`
 }
 
 
