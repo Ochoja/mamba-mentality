@@ -22,7 +22,7 @@ defineProps({
     <div class="description">
       {{ description }}
     </div>
-    <Button>{{ cta }}</Button>
+    <Button :route="`/trainings/${level}+basketball+drills`">{{ cta }}</Button>
   </div>
 </template>
 
