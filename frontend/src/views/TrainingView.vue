@@ -1,16 +1,23 @@
 <script setup>
+import { ref, watch } from "vue";
 import { useRoute } from "vue-router";
 const route = useRoute()
-const query = (route.params.query).replaceAll('+', " ")
-console.log(query)
+const query = ref(route.params.query.replaceAll('+', " "))
+
+watch(route, () => {
+  query.value = route.params.query.replaceAll('+', ' ')
+})
 </script>
 
 <template>
-  <div class="about">
+  <div class="trainings">
     <h1>{{ query }}</h1>
   </div>
 </template>
 
-<style>
-
+<style lang="scss" scoped>
+  h1{
+    text-align: center;
+    margin-top: 30px;
+  }
 </style>
