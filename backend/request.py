@@ -3,7 +3,7 @@
 Contains functions that handles request strings
 """
 endpoint = 'https://www.googleapis.com/youtube/v3/search'
-api_key = 'AIzaSyA8hJNd4cbYyaLtxQG8dSdAuxvgm8OQNSM'
+api_key = 'AIzaSyBIdZRCaifV3zjSALQXvYmBFPyf4BPpaYE'
 
 
 def return_query(query):

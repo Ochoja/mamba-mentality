@@ -24,7 +24,7 @@ def filter_result(result):
 @app.route('/api/search/<string:value>')
 def index(value):
     query = return_query(value)
-    req = requests.get(query)
+    req = requests.get(f'{query}+basketball')
     result = (req.json())
     
     new_result = filter_result(result["items"])
